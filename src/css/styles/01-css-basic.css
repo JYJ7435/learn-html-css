@@ -1,0 +1,12 @@
+/* 본문 요소에 배경 색상 지정하기 */
+body {
+  background-color: hsla(110, 50%, 50%, 0.5);
+}
+/* 제목 요소에 글자 크기 지정하기 */
+
+h1 {
+  font-size: small;
+  border-width: 1px;
+  border-style: solid;
+  border-color: currentColor;
+}
