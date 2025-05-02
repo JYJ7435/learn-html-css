@@ -1,0 +1,17 @@
+.likelion {
+  background-color: #fcf;
+
+  ol {
+    list-style: upper-roman;
+  }
+}
+
+.bootcamp {
+  background-color: #ffc;
+
+  ul {
+    list-style: circle inside url('/src/assets/thumbnail/new.png');
+    /* list-style-position: inside;
+    list-style-image: url('/src/assets/thumbnail/new.png'); */
+  }
+}
