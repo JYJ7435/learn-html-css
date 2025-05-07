@@ -1,0 +1,53 @@
+body {
+  margin: 50px;
+}
+
+.top-brand-section {
+  padding: 36px 0;
+  width: 1340px;
+  margin-inline: auto;
+  background-color: #ffc;
+
+  h2 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #000;
+  }
+
+  p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #303033;
+  }
+
+  ul {
+    margin-top: 16px;
+    display: flow-root;
+
+    li {
+      width: 228px;
+      float: left;
+      margin-top: 12px;
+      margin-right: 40px;
+    }
+
+    li:nth-child(5n) {
+      margin-right: 0;
+    }
+
+    div {
+      background-color: gray;
+      border-radius: 0.5rem;
+    }
+
+    img {
+      margin-inline: auto;
+    }
+
+    figcaption {
+      margin-top: 8px;
+      text-align: center;
+    }
+  }
+}
