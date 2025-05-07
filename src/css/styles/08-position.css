@@ -1,0 +1,47 @@
+/* p.lion:nth-of-type(2) {
+  border: 1px solid red;
+  background-color: rgb(255 255 80 /0.5);
+  position: relative;
+  top: 50px;
+  left: 100px;
+} */
+
+/* Relative 값 */
+/* 요소 박스의 원래 위치 */
+.like {
+  background-color: #000;
+  padding: 20px;
+
+  p {
+    border: 1px solid red;
+    background-color: rgb(255 255 80 / 1);
+    position: relative;
+    bottom: 20px;
+    right: 10px;
+  }
+}
+
+/* Fixed 값 */
+/* 뷰포트를 기준으로 배치 */
+h1 {
+  background-color: pink;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 1;
+}
+
+/* Absolute 값 */
+/* 컨테이닝 블록을 기준으로 배치 */
+.lion {
+  border: 1px solid blue;
+  position: relative;
+
+  span {
+    position: absolute;
+    background-color: rgb(100 255 30 / 0.5);
+    border: 1px solid black;
+    top: 20px;
+    left: 0px;
+  }
+}
