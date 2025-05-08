@@ -1,0 +1,82 @@
+body {
+  margin: 50px;
+}
+
+/* 인터렉션이 없는경우 */
+
+.avatar-img {
+  width: 100px;
+  position: relative;
+
+  img {
+    border-radius: 50%;
+  }
+
+  .status {
+    width: 25%;
+    aspect-ratio: 1/1;
+    background-color: var(--gray);
+    border-radius: 50%;
+    border: 1px solid var(--white);
+    position: absolute;
+    bottom: 3px;
+    right: 3px;
+
+    &.is-active {
+      background-color: rgb(3, 81, 36);
+    }
+  }
+}
+
+/* 인터렉션이 있는 아바타 */
+
+.avatar-button {
+  border: 0;
+  padding: 0;
+  background: transparent;
+  width: 80px;
+  position: relative;
+
+  img {
+    border-radius: 50%;
+  }
+
+  &::after {
+    content: '';
+    width: 25px;
+    aspect-ratio: 1/1;
+    background-color: var(--gray);
+    position: absolute;
+    right: 3px;
+    bottom: 3px;
+    border: 1px solid var(--white);
+    border-radius: 50%;
+  }
+
+  &.is-active::after {
+    background-color: rgb(3, 81, 36);
+  }
+}
+
+/* 아바타 리스트 */
+
+.avatars-list {
+  border: 1px solid var(--gray);
+  padding: 26px 40px;
+
+  ul {
+    width: 380px;
+    margin: 0 auto;
+    background: var(--yellow);
+    display: flow-root;
+  }
+
+  li {
+    margin: 10px 0 10px 20px;
+    float: left;
+
+    &:nth-child(4n + 1) {
+      margin-left: 0;
+    }
+  }
+}
