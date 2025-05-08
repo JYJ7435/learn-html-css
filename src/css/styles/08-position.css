@@ -45,3 +45,11 @@ h1 {
     left: 0px;
   }
 }
+
+/* Sticky 값 */
+
+.frontend {
+  background: var(--mint);
+  position: sticky;
+  top: 0;
+}
