@@ -1,0 +1,104 @@
+body {
+  margin: 50px;
+}
+
+div {
+  div:nth-child(1) {
+    background: var(--yellow);
+  }
+
+  div:nth-child(2) {
+    background: var(--coral);
+  }
+
+  div:nth-child(3) {
+    background: var(--mint);
+  }
+
+  div:nth-child(4) {
+    background: var(--blue);
+  }
+}
+
+/* flex */
+.lion {
+  inline-size: 500px;
+  block-size: 200px;
+  margin-block: 20px;
+  box-shadow: 0 0 0 10px red;
+  display: flex;
+  /* flex-direction flex-wrap 속성의 단축 속성 */
+  flex-flow: row nowrap;
+  /* justify-content: space-evenly; */
+  align-items: center;
+  /* align-content: space-around; */
+
+  .lion-item {
+    /* inline-size: 100px; */
+    block-size: 80px;
+    flex-basis: 150px;
+    flex-shrink: 1;
+    /* flex-grow: 1; */
+  }
+
+  .lion-item:nth-child(4) {
+    /* flex-grow: 1; */
+    flex-shrink: 2;
+  }
+}
+
+.frontend {
+  margin-block: 40px;
+  box-shadow: 0 0 0 10px gray;
+  inline-size: 500px;
+  block-size: 200px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: baseline;
+  column-gap: 20px;
+
+  .frontend-item {
+    inline-size: 100px;
+  }
+  .frontend-item:nth-child(1) {
+    block-size: 20px;
+    font-size: 12px;
+    align-self: start;
+    order: 999;
+  }
+  .frontend-item:nth-child(2) {
+    block-size: 40px;
+    font-size: 20px;
+  }
+  .frontend-item:nth-child(3) {
+    block-size: 60px;
+    font-size: 30px;
+  }
+  .frontend-item:nth-child(4) {
+    block-size: 80px;
+    font-size: 40px;
+    order: -1;
+  }
+}
+
+/* float */
+.like {
+  margin-block: 20px;
+  box-shadow: 0 0 0 10px blue;
+  display: flow-root;
+
+  .like-item {
+    float: inline-end;
+  }
+}
+
+/* Normal Flow 레이아웃 */
+.bootcamp {
+  margin-block: 20px;
+  box-shadow: 0 0 0 10px green;
+  block-size: 200px;
+  inline-size: 400px;
+  text-align: center;
+  align-content: center;
+}
