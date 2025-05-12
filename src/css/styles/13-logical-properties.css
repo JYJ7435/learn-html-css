@@ -1,0 +1,36 @@
+body {
+  margin: 50px;
+}
+
+.lion {
+  writing-mode: horizontal-tb;
+  /* width 속성의 논리 속성 */
+  inline-size: 500px;
+  background-color: var(--yellow);
+  /* height 속성의 논리 속성 */
+  block-size: 300px;
+}
+
+/* inset */
+.like {
+  background: var(--coral);
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  inset-block-start: 40px;
+  inset-inline-end: 40px;
+  inset: 80px 80px auto auto;
+}
+
+/* block-start, inline-start, block-end, inline-end */
+.bootcamp {
+  background: var(--green);
+  text-align: right;
+  text-align: end;
+
+  span {
+    background: var(--coral);
+    float: right;
+    float: inline-end;
+  }
+}
