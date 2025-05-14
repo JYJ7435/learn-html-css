@@ -4,7 +4,15 @@ body {
   font-family: 'SUIT Variable', sans-serif;
 }
 
+/* 하이퍼 링크 스타일 */
 a {
   color: inherit;
   text-decoration: none;
+}
+
+/* svg 이미지 */
+
+.svg-img {
+  inline-size: 100%;
+  block-size: auto;
 }
