@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NETFLIX UI</title>
+    <link rel="shortcut icon" href="/public/favicon/likelion.ico" type="image/x-icon" />
+    <link rel="icon" href="/public/favicon/likelion.svg" type="image/svg" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" />
+    <link rel="preload" as="font" href="/public/font/suit/SUIT-Variable.woff2" />
+    <link rel="stylesheet" href="/public/font/suit/SUIT-Variable.css" />
+    <link rel="stylesheet" href="/src/common/index.css" />
+    <link rel="stylesheet" href="/src/ui/netflix/netflix.css" />
+  </head>
+  <body>
+    <a href="/index.html">메인 페이지 이동</a>
+    <br />
+    <h1>NETFLIX UI</h1>
+
+    <hr />
+
+    <div class="form-box">
+      <form action="/" method="post">
+        <div class="input-wrapper">
+          <label for="input-email active" aria-hidden="true">이메일 주소</label>
+          <input type="email" placeholder="이메일 주소" id="input-email" required />
+          <p class="warning-text">정확한 이메일 주소를 입력하세요.</p>
+        </div>
+        <button type="submit">
+          <span>30일 무료 이용</span>
+          <span class="fas fa-arrow-right-long"></span>
+        </button>
+      </form>
+    </div>
+  </body>
+</html>
