@@ -1,0 +1,35 @@
+body {
+  margin: 50px;
+  background: #000;
+  color: #fff;
+}
+
+.news {
+  min-inline-size: 320px;
+  padding: 20px;
+  margin-block: 20px;
+  background-color: var(--dark-blue);
+  display: grid;
+  gap: 5px 20px;
+  grid-template-columns: minmax(190px, 1fr) max-content;
+}
+
+.title {
+  font-weight: 700;
+}
+
+.list,
+.item {
+  display: contents;
+}
+
+.more {
+  grid-column: 2;
+  grid-row: 1;
+  align-self: center;
+  justify-self: end;
+
+  svg {
+    display: block;
+  }
+}
