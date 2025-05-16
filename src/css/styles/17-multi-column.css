@@ -1,0 +1,45 @@
+body {
+  margin: 50px;
+}
+
+/* 멀티 컬럼 레이아웃 */
+.container {
+  margin-block-start: 20px;
+
+  div {
+    padding: 10px;
+  }
+}
+
+/* 단 너비 예시 */
+
+.like {
+  background: yellow;
+  column-width: 200px;
+  column-rule: 2px dotted red;
+}
+
+/* 단 갯수 예시 */
+
+.lion {
+  background: pink;
+  column-count: 2;
+  column-rule: 2px solid blue;
+  column-gap: 32px;
+}
+
+/* 단 너비,갯수 예시 */
+
+.bootcamp {
+  background: lightgreen;
+  columns: 200px 2;
+
+  span {
+    font-size: 1.5rem;
+    color: #fff;
+    background: darkblue;
+    display: block;
+    column-span: all;
+    margin-block: 0.5em;
+  }
+}
