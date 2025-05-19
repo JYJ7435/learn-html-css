@@ -108,13 +108,20 @@ body {
 /* flip 애니메이션 */
 .flip {
   perspective: 500px;
-}
 
-.target-animation {
-  animation: flip 2s infinite ease-in-out paused;
+  .target-animation {
+    animation: flip 2s infinite ease-in-out paused;
+  }
 }
 
 /* wobble 애니메이션 */
 .wobble .target-animation {
   animation: wobble 1s infinite ease-in-out paused;
+}
+
+/* CSS 변수를 활용한 애니메이션 */
+.rotate .target-animation {
+  inline-size: 120px;
+  aspect-ratio: 1/1;
+  animation: rotate 1s infinite ease-in-out paused;
 }
