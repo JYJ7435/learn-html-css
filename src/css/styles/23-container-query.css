@@ -1,0 +1,95 @@
+body {
+  margin: 50px;
+}
+
+.range-control {
+  margin-bottom: 20px;
+}
+
+.wrapper {
+  border: 1px solid red;
+  padding: 10px;
+  container-type: inline-size;
+  inline-size: 622px;
+
+  .bootcamp {
+    display: flex;
+    flex-flow: column nowrap;
+
+    @container ( width >= 600px) {
+      flex-direction: row;
+
+      div {
+        font-size: 2em;
+        color: #fff;
+      }
+    }
+
+    div {
+      block-size: 200px;
+      text-align: center;
+      align-content: center;
+      font-weight: 700;
+    }
+
+    .like {
+      background: green;
+    }
+
+    .lion {
+      background: orange;
+    }
+  }
+}
+
+/* 실습 예제 */
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+
+  .card-wrapper:nth-child(n + 5) {
+    grid-column: span 2;
+  }
+}
+
+.card-wrapper {
+  container-type: inline-size;
+
+  .card-box {
+    border: 1px solid var(--gray);
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 20px;
+    background: #f9f9f9;
+    padding: 20px;
+    color: #000;
+
+    @container (width >= 480px) {
+      flex-direction: row;
+    }
+
+    .img-box {
+      text-align: center;
+
+      img {
+        inline-size: 100%;
+        aspect-ratio: 3/2;
+        object-fit: cover;
+      }
+
+      figcaption {
+        font-style: italic;
+        font-weight: 600;
+        margin-block-start: 8px;
+      }
+    }
+
+    p {
+      color: #6d6d6d;
+      text-align: justify;
+      line-height: 1.5;
+    }
+  }
+}
