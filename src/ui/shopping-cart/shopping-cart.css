@@ -3,9 +3,11 @@
   --button-bg-color: #eee;
   --border-color: #b3b3b3;
 }
-
 body {
-  color: var(--gray-color);
+  margin: 50px;
+  font-family: 'Pretendard Variable', Pretendard, sans-serif;
+  background: #fff;
+  color: #000;
 }
 
 .cart-section {
@@ -20,6 +22,7 @@ body {
 .cart-title {
   font-size: 24px;
   margin-bottom: 17px;
+  letter-spacing: -0.02em;
 
   span {
     margin-right: 2.5px;
